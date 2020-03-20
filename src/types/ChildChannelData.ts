@@ -1,6 +1,6 @@
-import { GuildMember, VoiceChannel } from "discord.js";
+import { Member, VoiceChannel } from "eris";
 
 export interface ChildChannelData {
-    owner: GuildMember;
+    owner: Member;
     channel: VoiceChannel;
 }

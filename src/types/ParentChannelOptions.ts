@@ -1,10 +1,10 @@
-import { GuildMember, Snowflake } from "discord.js";
+import { Member } from "eris";
 
 export interface ParentChannelOptions {
     childAutoDelete: boolean;
     childAutoDeleteIfOwnerLeaves: boolean;
-    childFormat(member: GuildMember, count: number): string;
+    childFormat(member: Member, count: number): string;
     childMaxUsers?: number;
     childBitrate?: number;
-    childCategory?: Snowflake;
+    childCategory?: string;
 }
